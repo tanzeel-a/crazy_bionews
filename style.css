@@ -244,12 +244,13 @@ footer p {
 }
 
 footer a {
-    color: var(--color-accent);
+    color: var(--color-text-secondary);
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: var(--color-accent);
 }
 
 footer small {
@@ -257,6 +258,34 @@ footer small {
     margin-top: 0.5rem;
     font-size: 0.75rem;
     opacity: 0.8;
+}
+
+.footer-divider {
+    width: 40px;
+    height: 1px;
+    background-color: var(--color-border);
+    margin: 1.5rem auto;
+}
+
+.author {
+    font-weight: 500;
+    margin-bottom: 0.5rem !important;
+}
+
+.social-links {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-family: var(--font-sans);
+}
+
+.social-links a {
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}
+
+.social-links .separator {
+    margin: 0 0.5rem;
+    color: var(--color-border);
 }
 
 /* ============================================
